@@ -39,7 +39,7 @@ angular.module('openweather-app', ['ionic'])
   // Sunnyvale, CA
   var loc = {lat: 11.65, lng: 78.16};
 
-  $http.get('http://api.openweathermap.org/data/2.5/weather?lat=' + loc.lat + '&lon=' + loc.lng + '&units=imperial'&"APPID=70a2a814f64c3d318f4d959405dbb5af").success(function (weather) {
+  $http.get('http://api.openweathermap.org/data/2.5/weather?lat=' + loc.lat + '&lon=' + loc.lng + '&units=imperial'&"APPID=00000000000000000").success(function (weather) {
     $scope.weather = weather;
     $ionicLoading.hide();
   }).error(function (err) {
